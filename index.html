@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Completa</title>
-    <script>
-        window.onload = function() {
-            var myWindow = window.open("", "", "width=200,height=100");
-                myWindow.document.write("<p>Uma nova janela foi aberta.</p>");
-                myWindow.moveTo(500,500);
-                myWindow.focus();
-        }
-    </script>
 
     <style>
         .button{
             width: 50px;
             height: 50px;
             font-size: 24px;
-            margin: 2px;
+            margin: 1px;
             cursor: pointer;
         }
 
@@ -37,7 +29,7 @@
             <table>
                 <tr>
                     <td><input type="button" value="C" class="button" onclick="clean()"></td>
-                    <td><input type="button" value="<" class="button" onclick="back()"></td>
+                    <td><input type="button" value="B" class="button" onclick="back()"></td>
                     <td><input type="button" value="/" class="button" onclick="insert('/')"></td>
                     <td><input type="button" value="*" class="button" onclick="insert('*')"></td>
                 </tr>
@@ -88,6 +80,6 @@
             }
         }
     </script>
-    
+
 </body>
 </html>
