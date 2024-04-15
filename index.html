@@ -3,24 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Calculadora Completa</title>
-
-    <style>
-        .button{
-            width: 50px;
-            height: 50px;
-            font-size: 24px;
-            margin: 1px;
-            cursor: pointer;
-        }
-
-        .textview{
-            width: 217px;
-            margin: 5px;
-            font-size: 26px;
-            padding: 5px;
-        }
-    </style>
 </head>
 <body>
 
@@ -62,24 +46,7 @@
         </input>
     </div>
 
-    <script>
-        function insert(num) {
-            document.getElementById('textview').value = document.getElementById('textview').value+num;
-        }
-        function clean(){
-            document.getElementById('textview').value = "";
-        }
-        function back(){
-            var value = document.getElementById('textview').value;
-            document.getElementById('textview').value = value.substring(0, value.length-1);
-        }
-        function equal(){
-            var value = document.getElementById('textview').value;
-            if(value){
-                document.getElementById('textview').value = eval(value);
-            }
-        }
-    </script>
+ <script href="main.js"></script>
 
 </body>
 </html>
