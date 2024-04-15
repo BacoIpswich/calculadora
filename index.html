@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Completa</title>
+    <script>
+        window.onload = function() {
+            var myWindow = window.open("", "", "width=200,height=100");
+                myWindow.document.write("<p>Uma nova janela foi aberta.</p>");
+                myWindow.moveTo(500,500);
+                myWindow.focus();
+        }
+    </script>
 
     <style>
         .button{
